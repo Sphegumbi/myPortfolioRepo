@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca1c16c8f8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Sphe2.PNG" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hi, I'm Sphe Gumbi.</p>
+                <h1>I'm a <span>Jr Developer.<br></span> Welcome to my Portfolio Website.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Creating About Section -->
+    <div id="about">
+        <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user1.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-tittle">About Me</h1>
+                        <p>I'm Jr Developer with a National Dip in Information Technology obtained from Mangosuthu Univarsity of Technology, during my studies 
+                            I acquired so many skills in Software Development from creating back-end services on .NET platform with connection 
+                            to data-base and also implementing Graphic User Interface (GUI) to meet the Clients logic. I'm familiar with 
+                            using variety languages like (HTML, CSS, JavaScript, C#, PHP & Java) and I have recently obtained my Introduction to Python Certicate, 
+                            Introduction to GIT. with Zaio Coding School and I'm improving my skills working as a freelancer but my goal is to get an opportunity
+                             to work for a Tech Company as a Jr Developer or Front-End Developer on an Intern/Permanent position.
+                            </p>
+                            <div class="tab-tittles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Qualifications</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>| HTML5 | CSS </span><br>| Bootstrap5| Git & GitHub </li>
+                                    <li><span>| ReactJs | Python </span><br>| PyCharm | JavaScript</li>
+                                    <li><span>| MySql-Server | Java </span><br>| C# |ASN.Net</li>
+                                    <li><span>| PHP</span></li>
+                                    <li><span>| Quering Microsoft SQL-Server</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>| 2023 - Current</span><br>| Freelancer. </li>
+                                    <li><span>| 2012 - 2013 </span><br>| Tutoring/ Teaching Software Development at Mangosuth University. </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>| 2024</span><br> Intruduction to Git Certificate at Zaio Coding School.</li>
+                                    <li><span>| 2024</span><br> Intruduction to Python Certificate at Zaio Coding School.</li>
+                                    <li><span>| 2023</span><br> Solo Project Certificate at Zaio Coding School.</li>
+                                    <li><span>| 2014 </span><br>Microsoft Certified Proffesional at iStudent Accademy.</li>
+                                    <li><span>| 2011 - 2013 </span><br> National Diploma in (I.T Software Development) at Mangosuth University of Technology.</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- CODE for Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Front-End Dev</h2>
+                        <p>Designing and developing Graphic User Interface (GUI) to meet clients logic, is my current strength since 
+                            it allows me to always go far beyond the expectations.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Desk-Top App</h2>
+                        <p>I'm familiar with Developing Desk-top filling system using MySql, C# & Java.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>New Skills</h2>
+                        <p>Currently learning<br>
+                         ReactJS <br> & 
+                        Will be compliting my New Full Stack project soon.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Bootstrap5 | Project </h3>
+                            <p>Fully Responsive Website Built this Project with,<br> Bootstrap5, HTML &  CSS.</p>
+                            <a href="https://const-project.netlify.app">SITE</a>
+                            <a href="https://github.com/Sphegumbi/Bootstrap5ProjectWeb"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Coffee Shop Website</h3>
+                            <p>Fully Responsive Website. Built this with HTML, CSS & JavaScript.</p>
+                            <a href="https://morning-joy-coffee.netlify.app">SITE</a>
+                            <a href="https://github.com/Sphegumbi/niceCoffeeShopRepo"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Portfolio Website</h3>
+                            <p>Fully Responsive Portfolio Website Built with HTML, CSS & JavaScript. The goal is show case my Frontend Dev Skills.
+                            </p>
+                            <a href="/">SITE</a>
+                            <a href="#"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- Contect Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>sphegumbi06@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>(078) 129 1140/ (073)035 9510</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/g9051"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/sphe-gumbi-927803164?trk=contact-info"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/sphehgumbi_fit?igsh=YzVkODRmOTdmMw%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/Sphegumbi"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="48eb9ab6-4561-4a40-b698-4f5204ebbc19">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2 btnClear">Submit</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Developed by: Sphe Gumbi.</p>
+        </div>
+    </div>
+
+    <!-- Script  -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+
+    </script>
+   
+
+</body>
+</html>
